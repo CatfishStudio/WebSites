@@ -5,3 +5,21 @@
     padding: 0;
     border: 0;
 }
+
+body{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+    background-color: #777;
+    position: relative;
+    top: -200px;
+}
+
+.section_1{
+    height: 100vh;
+    background-image: url("../img/s7_airlines_airplane_sky.jpg");
+    background-size: cover;
+    /*top: -200px;*/
+}
