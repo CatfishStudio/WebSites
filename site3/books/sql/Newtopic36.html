@@ -1,0 +1,142 @@
+﻿<html>
+	
+<head>
+	<title>Работа с базой данных</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic36");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Работа с базой данных</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="SQL.html">Язык закросов SQL</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="SQL.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic35.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">CREATE - создает базу данных</span></p>
+<p class="rvps2"><span class="rvts6">DROP - удалить базу данных</span></p>
+<p class="rvps2"><span class="rvts6">ALTER - изменить определение базы данных.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Создать базу данных</span></p>
+<p class="rvps2"><span class="rvts14">CREATE DATABASE ИмяБазы ON Файл1, Файл2</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Создать таблицу</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы(Поле Тип Размер)</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts14">(ПолеID INTEGER NOT NULL UNIQUE,</span></p>
+<p class="rvps2"><span class="rvts14">Поле1 INTEGER,</span></p>
+<p class="rvps2"><span class="rvts14">Поле2 CHAR (20),</span></p>
+<p class="rvps2"><span class="rvts14">Поле3 CHAT (100),</span></p>
+<p class="rvps2"><span class="rvts14">ПолеДата DATE)</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts14">(ПолеID INTEGER NOT NULL PRIMARY KEY,</span></p>
+<p class="rvps2"><span class="rvts14">Поле1 INTEGER,</span></p>
+<p class="rvps2"><span class="rvts14">Поле2 CHAR (20),</span></p>
+<p class="rvps2"><span class="rvts14">Поле3 CHAT (100),</span></p>
+<p class="rvps2"><span class="rvts14">ПолеДата DATE)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Изменить таблицу</span></p>
+<p class="rvps2"><span class="rvts14">ALTER TABLE ИмяТаблицы ADD ИмяПоля Тип Размер</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Удаление таблицы</span></p>
+<p class="rvps2"><span class="rvts14">DROP TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Создать индекс</span></p>
+<p class="rvps2"><span class="rvts14">CREATE INDEX ИмяИндекса ON ИмяТаблицы (ИмяПоля)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Создание уникального (не содержащего повторов значений) индексов</span></p>
+<p class="rvps2"><span class="rvts14">CREATE UNIQUE INDEX ИмяИндекса ON ИмяТаблицы (ИмяПоля)</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts14">(ПолеID INTEGER NOT NULL UNIQUE,</span></p>
+<p class="rvps2"><span class="rvts14">Поле1 INTEGER,</span></p>
+<p class="rvps2"><span class="rvts14">Поле2 CHAR (20),</span></p>
+<p class="rvps2"><span class="rvts14">Поле3 CHAT (100))</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Установка первичного ключа</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts14">(ПолеID INTEGER NOT NULL PRIMARY KEY,</span></p>
+<p class="rvps2"><span class="rvts14">Поле1 INTEGER,</span></p>
+<p class="rvps2"><span class="rvts14">Поле2 CHAR (20),</span></p>
+<p class="rvps2"><span class="rvts14">Поле3 CHAT (100),</span></p>
+<p class="rvps2"><span class="rvts14">ПолеДата DATE)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Оператор CHECK проверяет вводимые в таблицу значение до того, как оно будет сохранено.</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts14">(ПолеID INTEGER NOT NULL PRIMARY KEY,</span></p>
+<p class="rvps2"><span class="rvts14">Поле1 INTEGER CHECK (Поле1 =&lt; 25)</span></p>
+<p class="rvps2"><span class="rvts14">Поле2 INTEGER NOT NULL,</span></p>
+<p class="rvps2"><span class="rvts14">Поле3 INTEGER NOT NULL,</span></p>
+<p class="rvps2"><span class="rvts14">ПолеДата DATE,</span></p>
+<p class="rvps2"><span class="rvts14">UNIQUE (Поле2, Поле3))</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Установка значения по умолчанию</span></p>
+<p class="rvps2"><span class="rvts14">CREATE TABLE ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts14">(ПолеID INTEGER NOT NULL PRIMARY KEY,</span></p>
+<p class="rvps2"><span class="rvts14">Поле1 INTEGER CHECK (Поле1 =&lt; 25) DEFAULT = 5</span></p>
+<p class="rvps2"><span class="rvts14">Поле2 INTEGER NOT NULL,</span></p>
+<p class="rvps2"><span class="rvts14">Поле3 INTEGER NOT NULL,</span></p>
+<p class="rvps2"><span class="rvts14">ПолеДата DATE,</span></p>
+<p class="rvps2"><span class="rvts14">UNIQUE (Поле2, Поле3))</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Синоним - это альтернативное имя для таблицы.</span></p>
+<p class="rvps2"><span class="rvts14">CREATE SYNONYM ИмяТаблицы FOR Пользователь.ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com">Free PDF documentation generator</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

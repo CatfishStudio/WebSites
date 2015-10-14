@@ -1,0 +1,105 @@
+﻿<html>
+	
+<head>
+	<title>Наследование (прототип)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic67");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Наследование (прототип)</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="JavaScript.html">JavaScript</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="JavaScript.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic66.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Newtopic68.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Наследование с помощью prototype</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var</span><span class="rvts6"> Pet = function(name, legs)</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">{</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">this</span><span class="rvts6">.name = name;</span></p>
+<p class="rvps5"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">this</span><span class="rvts6">.legs = legs;</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">};</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Pet.prototype.getDetails = </span><span class="rvts13">function</span><span class="rvts6">()</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">{</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">return</span><span class="rvts6"> this.name + ' ' + this.legs;</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">};</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var</span><span class="rvts6"> Cat = function(name)</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">{</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Pet.call(</span><span class="rvts13">this</span><span class="rvts6">.name, 4);</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">};</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Cat.prototype = </span><span class="rvts13">new</span><span class="rvts6"> Pet();</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Cat.prototype.action = </span><span class="rvts13">function</span><span class="rvts6">()</span></p>
+<p class="rvps5"><span class="rvts6">{</span></p>
+<p class="rvps5"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">return</span><span class="rvts14"> 'событие'</span><span class="rvts6">;</span></p>
+<p class="rvps5"><span class="rvts6">};</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts6">обращение к классу</span></p>
+<p class="rvps5"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts13">var</span><span class="rvts6"> petCat = </span><span class="rvts15">Cat</span><span class="rvts6">(</span><span class="rvts14">'Felix'</span><span class="rvts6">);</span></p>
+<p class="rvps5"><span class="rvts13">var</span><span class="rvts6"> details = petCat.getDetails();</span></p>
+<p class="rvps5"><span class="rvts13">var</span><span class="rvts6"> action = petCat.action();</span></p>
+<p class="rvps5"><span class="rvts6">petCat.name = </span><span class="rvts14">'Sylvester'</span><span class="rvts6">;</span></p>
+<p class="rvps5"><span class="rvts6">petCat.legs = 7;</span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com">Free CHM Help documentation generator</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

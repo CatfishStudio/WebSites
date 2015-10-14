@@ -1,0 +1,120 @@
+﻿<html>
+	
+<head>
+	<title>Интерфейс</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic15");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Интерфейс</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="ActionScript3.html">ActionScript3</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="ActionScript3.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic14.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Newtopic16.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps6"><span class="rvts33">Интерфейс</span></p>
+<p class="rvps6"><span class="rvts14">Интерфейс - это набор объявлений методов, который позволяет несвязанным объектам взаимодействовать друг с другом.</span></p>
+<p class="rvps6"><span class="rvts14">Структура определения интерфейса похожа на структуру определения класса за тем исключением, что интерфейс может содержать только методы без тел. </span></p>
+<p class="rvps6"><span class="rvts14">Интерфейсы не могут содержать переменных или констант, но могут включать функции get и set. Для определения интерфейса используется ключевое слово </span><span class="rvts34">interface</span><span class="rvts14">.</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">public interface </span><span class="rvts14">IEventDispatcher </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">function </span><span class="rvts14">addEventListener(type:</span><span class="rvts13">String</span><span class="rvts14">, listener:</span><span class="rvts13">Function</span><span class="rvts14">, &nbsp;</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">useCapture:</span><span class="rvts13">Boolean</span><span class="rvts14">=false, priority:</span><span class="rvts13">int</span><span class="rvts14">=0, </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">useWeakReference:</span><span class="rvts13">Boolean </span><span class="rvts14">= false):</span><span class="rvts13">void</span><span class="rvts14">; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">function </span><span class="rvts14">removeEventListener(type:</span><span class="rvts13">String</span><span class="rvts14">, listener:</span><span class="rvts13">Function</span><span class="rvts14">, &nbsp;</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">useCapture:</span><span class="rvts13">Boolean</span><span class="rvts14">=false):void; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">function </span><span class="rvts14">dispatchEvent(event:</span><span class="rvts13">Event</span><span class="rvts14">):</span><span class="rvts13">Boolean</span><span class="rvts14">; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">function </span><span class="rvts14">hasEventListener(type:</span><span class="rvts13">String</span><span class="rvts14">):</span><span class="rvts13">Boolean</span><span class="rvts14">; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">function </span><span class="rvts14">willTrigger(type:</span><span class="rvts13">String</span><span class="rvts14">):</span><span class="rvts13">Boolean</span><span class="rvts14">; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts35"><br/></span></p>
+<p class="rvps6"><span class="rvts36">Интерфейс может расширять один или несколько других интерфейсов.</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">public interface </span><span class="rvts36">IExample </span><span class="rvts37">extends </span><span class="rvts36">IExternalizable </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">{ </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">function </span><span class="rvts36">extra():</span><span class="rvts37">void</span><span class="rvts36">; </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">}</span></p>
+<p class="rvps6"><span class="rvts35"><br/></span></p>
+<p class="rvps6"><span class="rvts38">Реализация интерфейса в классе</span></p>
+<p class="rvps6"><span class="rvts36">Класс является единственным элементом языка ActionScript 3.0, который может реализовать интерфейс. Используйте ключевое слово </span><span class="rvts39">implements </span><span class="rvts36">в объявлении класса, чтобы реализовать один или несколько интерфейсов.</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">interface </span><span class="rvts36">IAlpha </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">{ </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">function </span><span class="rvts36">foo(str:</span><span class="rvts37">String</span><span class="rvts36">):</span><span class="rvts37">String</span><span class="rvts36">; </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">} </span></p>
+<p class="rvps6"><span class="rvts36"> </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">interface </span><span class="rvts36">IBeta </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">{ </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">function </span><span class="rvts36">bar():</span><span class="rvts37">void</span><span class="rvts36">; </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">} </span></p>
+<p class="rvps6"><span class="rvts36"> </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">class </span><span class="rvts36">Alpha </span><span class="rvts37">implements </span><span class="rvts36">IAlpha, IBeta </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">{ </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">public function </span><span class="rvts36">foo(param:</span><span class="rvts37">String</span><span class="rvts36">):</span><span class="rvts37">String</span></p>
+<p class="rvps6"><span class="rvts37"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">{</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts40">//...</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">} </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37">public function </span><span class="rvts36">bar():</span><span class="rvts37">void </span></p>
+<p class="rvps6"><span class="rvts37"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts37"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">{</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts40">//...</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">} </span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">}</span></p>
+<p class="rvps6"><span class="rvts35"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com/help-authoring-tool">Free help authoring environment</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

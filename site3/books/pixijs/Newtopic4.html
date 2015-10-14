@@ -1,0 +1,96 @@
+﻿<html>
+	
+<head>
+	<title>Объект характеристик</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "PixiJS.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic4");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Объект характеристик</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="PixiJS1.html">PixiJS</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="PixiJS1.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic3.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Newtopic5.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts15">var</span><span class="rvts14"> globalCharacteristics; </span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">// Список характеристик по умолчанию</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts16">/* Инициализация характеристик по умолчанию */</span></p>
+<p class="rvps2"><span class="rvts15">function</span><span class="rvts14"> globalInitCharacteristics()</span></p>
+<p class="rvps2"><span class="rvts14">{</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics = </span><span class="rvts15">new</span><span class="rvts14"> </span><span class="rvts19">Object</span><span class="rvts14">();</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"shaokahn"</span><span class="rvts14">] = [2,2,1,3,2,1200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"goro"</span><span class="rvts14">] = [2,2,2,2,2,1200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"liukang"</span><span class="rvts14">] = [2,1,1,1,2,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"kunglao"</span><span class="rvts14">] = [1,2,1,2,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"johnnycage"</span><span class="rvts14">] = [1,1,2,2,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"reptile"</span><span class="rvts14">] = [1,1,1,2,2,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"subzero"</span><span class="rvts14">] = [2,2,1,1,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"shangtsung"</span><span class="rvts14">] = [1,1,1,3,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"kitana"</span><span class="rvts14">] = [1,1,3,1,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"jax"</span><span class="rvts14">] = [1,3,1,1,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"mileena"</span><span class="rvts14">] = [1,2,2,1,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"baraka"</span><span class="rvts14">] = [1,1,1,1,3,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"scorpion"</span><span class="rvts14">] = [3,1,1,1,1,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">globalCharacteristics[</span><span class="rvts17">"raiden"</span><span class="rvts14">] = [2,1,2,1,2,200];</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">console.log(</span><span class="rvts17">"GLOBAL: init characteristics "</span><span class="rvts14"> + globalCharacteristics[</span><span class="rvts17">"shaokahn"</span><span class="rvts14">][0]);</span></p>
+<p class="rvps2"><span class="rvts14">}</span></p>
+<p></p>
+<p class="rvps4"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="http://www.helpndoc.com/help-authoring-tool">Free help authoring environment</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Evgeniy Somov. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

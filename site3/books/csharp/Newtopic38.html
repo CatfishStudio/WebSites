@@ -1,0 +1,112 @@
+﻿<html>
+	
+<head>
+	<title>Типы данных</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic38");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Типы данных</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="C.html">C#</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="C.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="C.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="checked.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">- Объявление переменных: </span><span class="rvts13">sbyte, byte, short, ushort, int, uint, long, ulong</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8"> i = 10;</span></p>
+<p class="rvps3"><span class="rvts13">long</span><span class="rvts8"> l = -1234;</span></p>
+<p class="rvps3"><span class="rvts13">ulong</span><span class="rvts8"> ul = 9;</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8"> i16 = 0xf;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Объявление переменных: </span><span class="rvts13">float, double, decimal</span></p>
+<p class="rvps3"><span class="rvts13">float</span><span class="rvts8"> f = 1.2f;</span></p>
+<p class="rvps3"><span class="rvts13">double</span><span class="rvts8"> d = 3.6e+5;</span></p>
+<p class="rvps3"><span class="rvts13">decimal</span><span class="rvts8"> dec = 34356.234567m;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Объявление переменных: </span><span class="rvts13">char</span></p>
+<p class="rvps3"><span class="rvts13">char</span><span class="rvts8"> c = 'a';</span></p>
+<p class="rvps3"><span class="rvts8">таблица управляющих символов</span></p>
+<p class="rvps3"><span class="rvts8">\' -одинарная кавычка</span></p>
+<p class="rvps3"><span class="rvts8">\" -двойная кавычка</span></p>
+<p class="rvps3"><span class="rvts8">\\ -обратная косая</span></p>
+<p class="rvps3"><span class="rvts8">\0 -символ null</span></p>
+<p class="rvps3"><span class="rvts8">\b -возврат (backspace)</span></p>
+<p class="rvps3"><span class="rvts8">\f -перевод страницы</span></p>
+<p class="rvps3"><span class="rvts8">\a -звонок</span></p>
+<p class="rvps3"><span class="rvts8">\n -новая строка</span></p>
+<p class="rvps3"><span class="rvts8">\r -возврат корретки</span></p>
+<p class="rvps3"><span class="rvts8">\t -горизонтальная табуляция</span></p>
+<p class="rvps3"><span class="rvts8">\v -вертикальная табуляция</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Объявление переменных: </span><span class="rvts13">bool, Bool, Boolean</span></p>
+<p class="rvps3"><span class="rvts13">bool</span><span class="rvts8"> bt = true;</span></p>
+<p class="rvps3"><span class="rvts13">bool</span><span class="rvts8"> bf = false;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Приведение типов</span></p>
+<p class="rvps3"><span class="rvts13">short</span><span class="rvts8"> s = 1;</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8"> i = 10;</span></p>
+<p class="rvps3"><span class="rvts8">s = (</span><span class="rvts13">short</span><span class="rvts8">)i;</span></p>
+<p class="rvps3"><span class="rvts14">Convert</span><span class="rvts8">.ToInt32(str);</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Значение </span><span class="rvts13">null</span></p>
+<p class="rvps3"><span class="rvts8">str = null; </span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

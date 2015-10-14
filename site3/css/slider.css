@@ -1,0 +1,124 @@
+#slider{ 
+
+	box-shadow: 0 0 100px rgba(255, 255, 255, 0.3) inset;
+	height: 305px;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	
+	background-attachment: fixed, fixed, fixed, scroll;
+    background-clip: border-box;
+    background-color: #c8c8c8;
+    
+    background-origin: padding-box;
+    background-position: 100px -50px, 0 0px, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto auto, auto auto, auto auto, cover;
+}
+
+.bgSite{ background-image: url("../images/background.jpg");} 
+.bgCrystal2{ background-image: url("../images/game_background_crystal2.jpg");} 
+.bgBattleship2d{ background-image: url("../images/game_background_battleship.jpg");} 
+.bgTickTackToe{ background-image: url("../images/game_background_Tick_Tack_Toe.jpg");} 
+.bgCrystal{ background-image: url("../images/game_background_crystal.jpg");} 
+.bgBattleship3d{ background-image: url("../images/game_background_battleship3d.jpg");} 
+.bgPiratesOfTheCaribbean{ background-image: url("../images/game_background_PiratesOfTheCaribbean.jpg");}
+
+/* СЛАЙДЫ */
+#info{
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+    margin: 0;
+    padding: 10px;
+    width: 960px;
+	color: #FFFFFF;
+}
+
+#button-prev{
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+    font-family: "verdemoderna";
+    font-size: 84px;
+    font-variant: normal;
+    font-weight: normal;
+	text-align: center;
+    text-indent: 0;
+    text-transform: none;
+	text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+	line-height: 55px;
+    position: absolute;
+    display: block;
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 70px;
+	top: 100px;
+}
+
+#button-prev:hover{
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+	color:#FFF;
+}
+
+#button-next{
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+    font-family: "verdemoderna";
+    font-size: 84px;
+    font-variant: normal;
+    font-weight: normal;
+	text-align: center;
+    text-indent: 0;
+    text-transform: none;
+	text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+	line-height: 55px;
+    position: absolute;
+    display: block;
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 70px;
+	top: 100px;
+	left:910px;
+}
+
+#button-next:hover{
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+	color:#FFF;
+}
+
+
+
+/* ПРОЕКТЫ */
+.home_section_left {
+    background: url("images/home_block_bg.gif") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    float: left;
+    height: auto;
+    margin: 0 14px;
+    padding: 0 10px 20px;
+    width: 270px;
+}
+
+
+img.home_section_icon {
+    float: left;
+    width: 63px;
+}
+
+
+.home_subtitle {
+    color: #a7a7a7;
+    float: left;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+    width: 190px;
+}
+
+.home_section_thumb {
+    border: 1px solid #dcdcdc;
+    clear: both;
+    float: left;
+    margin: 10px 0;
+    padding: 2px;
+    text-align: center;
+}
+

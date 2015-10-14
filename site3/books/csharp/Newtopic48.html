@@ -1,0 +1,119 @@
+﻿<html>
+	
+<head>
+	<title>Массивы</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic48");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Массивы</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="C.html">C#</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="C.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic47.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">- Описание и инициализация массивов</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[] arrInt;</span></p>
+<p class="rvps3"><span class="rvts13">char</span><span class="rvts8">[] arrChar;</span></p>
+<p class="rvps3"><span class="rvts13">float</span><span class="rvts8">[] arrFloat;</span></p>
+<p class="rvps3"><span class="rvts8">arrInt =</span><span class="rvts13"> new int</span><span class="rvts8">[25];</span></p>
+<p class="rvps3"><span class="rvts8">arrChar = </span><span class="rvts13">new char</span><span class="rvts8">[3];</span></p>
+<p class="rvps3"><span class="rvts8">arrFloat = </span><span class="rvts13">new float</span><span class="rvts8">[1000];</span></p>
+<p class="rvps3"><span class="rvts8">arrInt[0] = 10;</span></p>
+<p class="rvps3"><span class="rvts8">arrInt[1] = 20;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[] arrInt = </span><span class="rvts13">new int</span><span class="rvts8">[9];</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[] arrInt = {1,2,3,4,5};</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[] arrInt = </span><span class="rvts13">new int</span><span class="rvts8">[4]{1,2,3,4,5}</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Многомерные массивы</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[,] Matrix = </span><span class="rvts13">new int</span><span class="rvts8">[2,2];</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[][] Matris = </span><span class="rvts13">new int</span><span class="rvts8">[2][2];</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[,] Matrix = { {1,2} , {3,4} };</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Класса Array (System.Array)</span></p>
+<p class="rvps3"><span class="rvts8">CreateInstance() - позволяет создавать многомерный или одномерный массив.</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8">[] lengths = {10};</span></p>
+<p class="rvps3"><span class="rvts13">int</span><span class="rvts8"> lowBounds = {1};</span></p>
+<p class="rvps3"><span class="rvts13">Array</span><span class="rvts8"> aMatrix = </span><span class="rvts13">Array</span><span class="rvts8">.CreateInstance(</span><span class="rvts13">typeof</span><span class="rvts8">(int), lengths, lowBounds);</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">- Класс ArrayList (System.Collections)</span></p>
+<p class="rvps3"><span class="rvts8">Предназначен для хранения объекточ произвольного типа</span></p>
+<p class="rvps3"><span class="rvts13">static</span><span class="rvts8"> </span><span class="rvts13">ArrayList</span><span class="rvts8"> Books = </span><span class="rvts13">new ArrayList</span><span class="rvts8">();</span></p>
+<p class="rvps3"><span class="rvts8">Books.Add("Значение");</span></p>
+<p class="rvps3"><span class="rvts13">string</span><span class="rvts8"> nameBook = Books[0].toString();</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Add - добавить новый объект в конец списка</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; AddRange - добавить несколько объектов в конец списка</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; BinarySearch - поиск объекта в отсортированном списке</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Capacity - текущая ёмкость коллекции</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Clean - удалить все элементы</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Contains - возвращает истину если коллекция содержит элемент</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Count - текущая длина коллекции</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; GetRange - возвращает диапазон элеменов</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; IndexOf - возвращает индекс элемента со значением</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Insert - вставляет элемент по интексу в коллекцию</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; LastIndexOf - индекс последнего вхождения</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Remove - удаляет из коллекции первое вхождение</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; RemoveAt - удаляет элемент по индексу</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; RemoveRange - удаляет диапазон элементов</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Reverse - реверсирует элементы</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; Sort - сортирует элементы </span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com">Free HTML Help documentation generator</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

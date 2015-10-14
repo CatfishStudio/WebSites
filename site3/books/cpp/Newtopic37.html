@@ -1,0 +1,147 @@
+﻿<html>
+	
+<head>
+	<title>Структура с объявленной переменной</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic37");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Структура с объявленной переменной</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="C.html">C++</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="C.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic29.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Newtopic49.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">- Структура с объявленной переменной</span></p>
+<p class="rvps3"><span class="rvts13">struct</span><span class="rvts8"> addr {</span></p>
+<p class="rvps5"><span class="rvts13">char</span><span class="rvts8"> name[50];</span></p>
+<p class="rvps5"><span class="rvts13">unsingned long int</span><span class="rvts8"> zip;</span></p>
+<p class="rvps3"><span class="rvts8">} addr_info </span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">//-----------------------------------------------------------------------------------------------------</span></p>
+<p class="rvps3"><span class="rvts8">#include &lt;iostream&gt;</span></p>
+<p class="rvps3"><span class="rvts8">using namespace std;</span></p>
+<p class="rvps3"><span class="rvts8"> </span></p>
+<p class="rvps3"><span class="rvts13">struct</span><span class="rvts8"> building &nbsp; &nbsp; //Создаем структуру!</span></p>
+<p class="rvps3"><span class="rvts8">{ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;char *owner; &nbsp; &nbsp; &nbsp; //здесь будет храниться имя владельца</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;char *city; &nbsp; &nbsp; &nbsp; &nbsp;//название города</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;int amountRooms; &nbsp; //количество комнат</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;float price; &nbsp; &nbsp; &nbsp; //цена</span></p>
+<p class="rvps3"><span class="rvts8">}; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="rvps3"><span class="rvts8"> </span></p>
+<p class="rvps3"><span class="rvts8">int main()</span></p>
+<p class="rvps3"><span class="rvts8">{</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;setlocale (LC_ALL, "rus");</span></p>
+<p class="rvps3"><span class="rvts8"> </span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;building apartment1; &nbsp; //это объект структуры с типом данных, именем структуры, building</span></p>
+<p class="rvps3"><span class="rvts8"> </span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;apartment1.owner = "Денис"; //заполняем данные о владельце и т.д.</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;apartment1.city = "Симферополь"; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;apartment1.amountRooms = 5;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;apartment1.price = 150000;</span></p>
+<p class="rvps3"><span class="rvts8"> </span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "Владелец квартиры: " &lt;&lt; apartment1.owner &lt;&lt; endl;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "Квартира находится в городе: " &lt;&lt; apartment1.city &lt;&lt; endl;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "Количество комнат: " &lt;&lt; apartment1.amountRooms &lt;&lt; endl;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "Стоимость: " &lt;&lt; apartment1.price &lt;&lt; " $" &lt;&lt; endl;</span></p>
+<p class="rvps3"><span class="rvts8"> </span></p>
+<p class="rvps3"><span class="rvts8">return 0;</span></p>
+<p class="rvps3"><span class="rvts8">}</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">//-----------------------------------------------------------------------------------------------------</span></p>
+<p class="rvps3"><span class="rvts8">#include &lt;iostream&gt;</span></p>
+<p class="rvps3"><span class="rvts8">using namespace std;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">struct PERSON { &nbsp; // Declare PERSON struct type</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;int age; &nbsp; // Declare member types</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;long ss;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;float weight;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;char name[25];</span></p>
+<p class="rvps3"><span class="rvts8">} family_member; &nbsp; // Define object of type PERSON</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">struct CELL { &nbsp; // Declare CELL bit field</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;unsigned short character &nbsp;: 8; &nbsp;// 00000000 ????????</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;unsigned short foreground : 3; &nbsp;// 00000??? 00000000</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;unsigned short intensity &nbsp;: 1; &nbsp;// 0000?000 00000000</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;unsigned short background : 3; &nbsp;// 0???0000 00000000</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;unsigned short blink &nbsp; &nbsp; &nbsp;: 1; &nbsp;// ?0000000 00000000</span></p>
+<p class="rvps3"><span class="rvts8">} screen[25][80]; &nbsp; &nbsp; &nbsp; // Array of bit fields </span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">int main() {</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;struct PERSON sister; &nbsp; // C style structure declaration</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;PERSON brother; &nbsp; // C++ style structure declaration</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;sister.age = 13; &nbsp; // assign values to members</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;brother.age = 7;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "sister.age = " &lt;&lt; sister.age &lt;&lt; '\n';</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "brother.age = " &lt;&lt; brother.age &lt;&lt; '\n';</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;CELL my_cell;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;my_cell.character = 1;</span></p>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp;cout &lt;&lt; "my_cell.character = " &lt;&lt; my_cell.character;</span></p>
+<p class="rvps3"><span class="rvts8">}</span></p>
+<p class="rvps3"><span class="rvts8">// Output:</span></p>
+<p class="rvps3"><span class="rvts8">// sister.age = 13</span></p>
+<p class="rvps3"><span class="rvts8">// brother.age = 7</span></p>
+<p class="rvps3"><span class="rvts8">// my_cell.character = 1</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com">Full-featured Documentation generator</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

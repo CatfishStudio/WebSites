@@ -1,0 +1,135 @@
+﻿<html>
+	
+<head>
+	<title>Пространства имён</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic14");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Пространства имён</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="ActionScript3.html">ActionScript3</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="ActionScript3.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Object1.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Newtopic15.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps5"><span class="rvts17">Пространства имен </span><span class="rvts14">позволяют управлять доступностью создаваемых свойств и методов. Можно рассматривать спецификаторы управления доступом public, private, protected и internal как встроенные пространства имен. </span></p>
+<p class="rvps6"><span class="rvts28">При использовании пространств имен необходимо выполнить три основных шага.</span></p>
+<p class="rvps6"><span class="rvts26">1.</span><span class="rvts15"> </span><span class="rvts14">Прежде всего необходимо определить пространство имен, используя ключевое слово </span><span class="rvts13">namespace</span><span class="rvts14">. Например, определяется пространство имен </span><span class="rvts17">version1</span><span class="rvts14">. </span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">namespace</span><span class="rvts15"> </span><span class="rvts26">version1</span><span class="rvts15">;</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts26">2</span><span class="rvts17">. </span><span class="rvts14">Во-вторых, необходимо применить пространство имен, используя его вместо спецификатора контроля доступа при объявлении свойства или метода. </span></p>
+<p class="rvps6"><span class="rvts14">В следующем примере функция </span><span class="rvts17">myFunction</span><span class="rvts14">() размещается в пространстве имен </span><span class="rvts17">version1</span><span class="rvts14">.</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts17">version1 </span><span class="rvts13">function </span><span class="rvts14">myFunction()</span><span class="rvts15">:</span><span class="rvts16">void</span><span class="rvts13"> </span><span class="rvts14">{}</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts17">3. </span><span class="rvts14">В-третьих, как только пространство имен будет применено, к нему можно адресоваться с помощью директивы </span><span class="rvts13">use </span><span class="rvts14">или уточняя имя идентификатора указанием пространства имен. </span></p>
+<p class="rvps6"><span class="rvts14">В следующем примере </span><span class="rvts17">myFunction</span><span class="rvts14">() вызывается с использованием директивы use.</span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">use namespace </span><span class="rvts26">version1</span><span class="rvts15">; </span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts26">myFunction</span><span class="rvts15">();</span></p>
+<p class="rvps6"><span class="rvts14">Для вызова функции myFunction() можно также использовать уточненное имя, как показано в следующем примере</span><span class="rvts15"> (</span><span class="rvts29">но так лучше не делать</span><span class="rvts14">)</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts30">version1</span><span class="rvts31">::</span><span class="rvts30">myFunction</span><span class="rvts31">();</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts17">Определение пространств имен</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">namespace </span><span class="rvts14">flash_proxy = "</span><span class="rvts32">&lt;http://www.adobe.com/flash/proxy&gt;</span><span class="rvts14">";</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">package </span><span class="rvts14">flash.utils </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">public namespace </span><span class="rvts14">flash_proxy; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts17">Применение пространств имен</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">namespace </span><span class="rvts14">example1; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">class </span><span class="rvts14">someClass </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">example1 </span><span class="rvts14">myFunction() {} </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts17">Привязка пространств имен</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">use namespace </span><span class="rvts14">example1; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">myFunction();</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts17">Использование пространств имен</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">package </span><span class="rvts14">flash.utils </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">public namespace flash_proxy; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">public class </span><span class="rvts14">Proxy </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">flash_proxy function callProperty(name:*, ... rest):* </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">flash_proxy function deleteProperty(name:*):Boolean </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">... </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">package </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">import </span><span class="rvts14">flash.utils.Proxy; </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">import </span><span class="rvts14">flash.utils.flash_proxy; </span></p>
+<p class="rvps6"><span class="rvts14"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">dynamic </span><span class="rvts14">class MyProxy </span><span class="rvts13">extends </span><span class="rvts14">Proxy </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">flash_proxy </span><span class="rvts13">override function </span><span class="rvts14">callProperty(name:*, ...rest):* </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{ </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">trace("method call intercepted: " + name); </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">} </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">} </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com/help-authoring-tool">Single source CHM, PDF, DOC and HTML Help creation</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

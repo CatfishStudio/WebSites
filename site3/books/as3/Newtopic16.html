@@ -1,0 +1,181 @@
+﻿<html>
+	
+<head>
+	<title>События</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic16");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">События</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="ActionScript3.html">ActionScript3</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="ActionScript3.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic15.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="whiledofor.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps6"><span class="rvts33">События</span></p>
+<p class="rvps6"><span class="rvts14">Слушатели и обработчики событий</span></p>
+<p class="rvps6"><span class="rvts41"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">addEventListener(</span><span class="rvts42">"enterFrame"</span><span class="rvts36">, onEnterFrame);</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">addEventListener(</span><span class="rvts37">Event</span><span class="rvts36">.ENTER_FRAME, onEnterFrame);</span></p>
+<p class="rvps6"><span class="rvts36"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts36">removeEventListener(</span><span class="rvts37">Event</span><span class="rvts36">.ENTER_FRAME, onEnterFrame);</span></p>
+<p class="rvps6"><span class="rvts43"><br/></span></p>
+<p class="rvps6"><span class="rvts14">Общедоступные константы (flash.events)</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">ACTIVATE : String = "activate" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Включить</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">ADDED : String = "added" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Добавить</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">ADDED_TO_STAGE : String = "addedToStage" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Добавить на </span><span class="rvts44">Stage</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">BROWSER_ZOOM_CHANGE : String = "browserZoomChange" </span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Изменение масштаба браузера</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CANCEL : String = "cancel"</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15"> </span><span class="rvts24">// Отмена</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CHANGE : String = "change"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Изменение</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CLEAR : String = "clear"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Очистка</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CLOSE : String = "close"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Закрыть</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CLOSING : String = "closing"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Закрытие (закрывать)</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">COMPLETE : String = "complete"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Выполнено</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CONNECT : String = "connect"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Соединяться</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">COPY : String = "copy"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Копировать</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">CUT : String = "cut"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Вырезать</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">DEACTIVATE : String = "deactivate"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Отключить</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">DISPLAYING : String = "displaying"</span><span class="rvts15"> </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">// </span><span class="rvts24">Отображение</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">ENTER_FRAME : String = "enterFrame" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Смена кадра</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">EXIT_FRAME : String = "exitFrame" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Завершение кадра</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">EXITING : String = "exiting" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Свернуть (выйти из)</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">FRAME_CONSTRUCTED : String = "frameConstructed" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Кадр построен</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">FULLSCREEN : String = "fullScreen" </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Развернуть на весь экран</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">HTML_BOUNDS_CHANGE : String = "htmlBoundsChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// </span><span class="rvts19">html </span><span class="rvts24">оценка выбора (изменений)</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">HTML_DOM_INITIALIZE : String = "htmlDOMInitialize"</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Инициализация </span><span class="rvts19">DOM html</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">HTML_RENDER : String = "htmlRender"</span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">// </span><span class="rvts24">Предоставить </span><span class="rvts19">html</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">ID3 : String = "id3"</span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">//</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">INIT : String = "init"</span></p>
+<p class="rvps6"><span class="rvts19"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">// </span><span class="rvts24">Инициализация</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">LOCATION_CHANGE : String = "locationChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Изменение местоположения</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">MOUSE_LEAVE : String = "mouseLeave"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Мышь отпуск</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">NETWORK_CHANGE : String = "networkChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Изменение сети</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">OPEN : String = "open"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Открыть</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">PASTE : String = "paste"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Вставить</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">PREPARING : String = "preparing"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Подготовка</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">REMOVED : String = "removed"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Удалённый </span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">REMOVED_FROM_STAGE : String = "removedFromStage"</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Удалять</span><span class="rvts19"> </span><span class="rvts24">из </span><span class="rvts44">Stage</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">RENDER : String = "render"</span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">// </span><span class="rvts24">Оказывать (визуализировать)</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">RESIZE : String = "resize"</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Изменение размера</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">SCROLL : String = "scroll"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Прокрутка</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">SELECT : String = "select"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Выбор</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">SELECT_ALL : String = "selectAll"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Выбрать всё</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">SOUND_COMPLETE : String = "soundComplete"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Звук выполнен</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">STANDARD_ERROR_CLOSE : String = "standardErrorClose"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Стандартная ошибка закрыть</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">STANDARD_INPUT_CLOSE : String = "standardInputClose"</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Стандартный ввод закрыть</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">STANDARD_OUTPUT_CLOSE : String = "standardOutputClose"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Стандартный вывод закрыть</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">TAB_CHILDREN_CHANGE : String = "tabChildrenChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Табуляция переключения выбора дочерних общектов</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">TAB_ENABLED_CHANGE : String = "tabEnabledChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Табуляция включен выбор</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">TAB_INDEX_CHANGE : String = "tabIndexChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Табуляция индекс выбора</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">TEXT_INTERACTION_MODE_CHANGE : String = "textInteractionModeChange"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Изменение текта </span><span class="rvts19">mode </span><span class="rvts24">выбор</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">UNLOAD : String = "unload"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Выгружать (загружать)</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">USER_IDLE : String = "userIdle"</span></p>
+<p class="rvps6"><span class="rvts24"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Пользователь простой (холостой)</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">USER_PRESENT : String = "userPresent"</span></p>
+<p class="rvps6"><span class="rvts17"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">// Пользователь представился</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com">Free EBook and documentation generator</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

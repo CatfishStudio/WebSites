@@ -1,0 +1,106 @@
+﻿<html>
+	
+<head>
+	<title>Перемещение объекта</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "PixiJS.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Newtopic9");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Перемещение объекта</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="PixiJS1.html">PixiJS</a> &rsaquo;&rsaquo; <a href="TweenJS.html">TweenJS</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TweenJS.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="TweenJS.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts15">var</span><span class="rvts14"> stage = </span><span class="rvts15">new</span><span class="rvts14"> PIXI.Container();</span></p>
+<p class="rvps2"><span class="rvts15">var</span><span class="rvts14"> windowSprite;</span></p>
+<p class="rvps2"><span class="rvts15">var</span><span class="rvts14"> windowStage;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">function createWindow()</span></p>
+<p class="rvps2"><span class="rvts14">{</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">windowSprite = </span><span class="rvts15">new</span><span class="rvts14"> </span><span class="rvts20">PIXI.Sprite</span><span class="rvts14">(bgTexture);</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">windowSprite.name = </span><span class="rvts17">"windowSprite"</span><span class="rvts14">;</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">windowSprite.position.x = 800;</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">windowSprite.position.y = (600 / 3.6);</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">stage.addChild(windowSprite);</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">windowStage = </span><span class="rvts15">new</span><span class="rvts14"> </span><span class="rvts20">PIXI.Container</span><span class="rvts14">();</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">windowStage.addChild(windowSprite);</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">stage.addChild(windowStage);</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">startTween();</span></p>
+<p class="rvps2"><span class="rvts14">}</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts15">function</span><span class="rvts14"> startTween()</span></p>
+<p class="rvps2"><span class="rvts14">{</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">createjs</span><span class="rvts14">.Tween.get(windowSprite, {loop: </span><span class="rvts15">false</span><span class="rvts14">})</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.to({x: 580}, 1000, </span><span class="rvts21">createjs</span><span class="rvts14">.Ease.getPowInOut(4));</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.to({alpha: 0, y: 75}, 500, </span><span class="rvts21">createjs</span><span class="rvts14">.Ease.getPowInOut(2))</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.to({alpha: 0, y: 125}, 100)</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.to({alpha: 1, y: 100}, 500, </span><span class="rvts21">createjs</span><span class="rvts14">.Ease.getPowInOut(2))</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.to({x: 100}, 800, </span><span class="rvts21">createjs</span><span class="rvts14">.Ease.getPowInOut(2));</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">createjs</span><span class="rvts14">.Tween.get(windowStage, {loop: </span><span class="rvts15">false</span><span class="rvts14">})</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.to({x: 0, y: -1250}, 5000, </span><span class="rvts21">createjs</span><span class="rvts14">.Ease.getPowInOut(1));</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">createjs</span><span class="rvts14">.Ticker.setFPS(60);</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">createjs</span><span class="rvts14">.Ticker.addEventListener(</span><span class="rvts17">"tick"</span><span class="rvts14">, stage);</span></p>
+<p class="rvps2"><span class="rvts14">}</span></p>
+<p></p>
+<p class="rvps4"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="http://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Write eBooks for the Kindle</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Evgeniy Somov. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

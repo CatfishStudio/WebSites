@@ -1,0 +1,137 @@
+﻿<html>
+	
+<head>
+	<title>Array</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("Array");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Array</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="ActionScript3.html">ActionScript3</a> &rsaquo;&rsaquo; <a href="Newtopic6.html">Массивы</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Newtopic6.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic6.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Vector.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps6"><span class="rvts17">Объявление массива</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts15">names</span><span class="rvts14">:</span><span class="rvts24">/*String */</span><span class="rvts13">Array&nbsp;</span><span class="rvts14"> = [];</span></p>
+<p class="rvps6"><span class="rvts45"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts14">names:</span><span class="rvts24">/*String*/</span><span class="rvts13">Array </span><span class="rvts14">= [</span><span class="rvts15"> </span><span class="rvts21">"peter"</span><span class="rvts14">,</span><span class="rvts15">&nbsp;</span><span class="rvts14"> </span><span class="rvts21">"john"</span><span class="rvts18"> </span><span class="rvts14">];</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts15">numbers</span><span class="rvts14">:</span><span class="rvts24">/*</span><span class="rvts19">int</span><span class="rvts24"> */</span><span class="rvts13">Array&nbsp;</span><span class="rvts14"> = [ 1, 2, 3 ]</span><span class="rvts15">;</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts15">numbers</span><span class="rvts14">:</span><span class="rvts24">/*</span><span class="rvts19">int</span><span class="rvts24"> */</span><span class="rvts13">Array&nbsp;</span><span class="rvts14"> = [ undefined, undefined, undefined ]</span><span class="rvts15">;</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts25">Обращение к массиву по индексу</span></p>
+<p class="rvps6"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">names[1] = "John";</span></p>
+<p class="rvps6"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">trace</span><span class="rvts22">(names[2].toString());</span></p>
+<p class="rvps6"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Вставка элементов массива</span></p>
+<p class="rvps2"><span class="rvts22">Метод </span><span class="rvts25">push</span><span class="rvts22">() добавляет один или несколько элементов в конец массива.</span></p>
+<p class="rvps2"><span class="rvts22">Метод </span><span class="rvts25">unshift</span><span class="rvts22">() вставляет один или более элементов в начало массива/</span></p>
+<p class="rvps2"><span class="rvts22">Метод </span><span class="rvts25">splice</span><span class="rvts22">() вставляет любое число элементов по заданному индексу в массиве.</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">var </span><span class="rvts22">planets:</span><span class="rvts19">/*String*/</span><span class="rvts16">Array </span><span class="rvts22">= [];</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">planets.push(</span><span class="rvts18">"Mars"</span><span class="rvts22">);</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">planets.unshift(</span><span class="rvts18">"Mercury"</span><span class="rvts22">);</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">planets.splice(1, 0, </span><span class="rvts18">"Venus"</span><span class="rvts22">, </span><span class="rvts18">"Earth"</span><span class="rvts22">);</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">trace</span><span class="rvts22">(planets); </span><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">// результат: Mercury,Venus,Earth,Mars</span></p>
+<p class="rvps6"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Удаление элементов массива</span></p>
+<p class="rvps2"><span class="rvts22">Метод </span><span class="rvts25">pop</span><span class="rvts22">() удаляет элемент из конца массива.</span></p>
+<p class="rvps2"><span class="rvts22">Метод </span><span class="rvts25">shift</span><span class="rvts22">() удаляет элемент из начала массива.</span></p>
+<p class="rvps2"><span class="rvts22">Метод </span><span class="rvts25">splice</span><span class="rvts22">(), который также может использоваться для вставки элементов, удаляет произвольное число элементов, начиная с индекса, заданного первым из передаваемых методу аргументов.</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">var </span><span class="rvts22">oceans:</span><span class="rvts19">/*String*/</span><span class="rvts16">Array </span><span class="rvts22">= [</span><span class="rvts18">"Victoria", "Pacific", "Aral", "Superior", "Indian", </span></p>
+<p class="rvps2"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">"Huron"</span><span class="rvts22">];</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">oceans.splice(2, 2, </span><span class="rvts18">"Arctic"</span><span class="rvts22">, </span><span class="rvts18">"Atlantic"</span><span class="rvts22">);</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">oceans.pop();</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">oceans.shift();</span></p>
+<p class="rvps2"><span class="rvts22"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16">trace</span><span class="rvts22">(oceans); </span><span class="rvts19">// результат: Pacific,Arctic,Atlantic,Indian</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Сортировка массива</span></p>
+<p class="rvps2"><span class="rvts22">reverse(), sort() и sortOn(), - позволяющих изменить порядок элементов в индексном массиве путем сортировки или задания обратного порядка.</span></p>
+<p class="rvps2"><span class="rvts25">reverse</span><span class="rvts22">() Изменяет порядок элементов таким образом, что последний элемент становится первым, предпоследний - вторым и так далее.</span></p>
+<p class="rvps2"><span class="rvts25">sort</span><span class="rvts22">() Позволяет сортировать элементы объекта Array разными предварительно определенными способами, например в алфавитном порядке или по номерам.</span></p>
+<p class="rvps2"><span class="rvts25">sortOn</span><span class="rvts22">() Позволяет сортировать объекты, которые имеют одно или несколько общих свойств.</span></p>
+<p class="rvps2"><span class="rvts46"><br/></span></p>
+<p class="rvps2"><span class="rvts25">Запросы в массив</span></p>
+<p class="rvps2"><span class="rvts22">concat(), join(), slice(), toString() - отправляют запросы в массив, но не изменяют его.</span></p>
+<p class="rvps2"><span class="rvts22">Методы </span><span class="rvts25">concat</span><span class="rvts22">() и </span><span class="rvts25">slice</span><span class="rvts22">() возвращают новые массивы</span></p>
+<p class="rvps2"><span class="rvts22">Методы </span><span class="rvts25">join</span><span class="rvts22">() и </span><span class="rvts25">toString</span><span class="rvts22">() возвращают строки </span></p>
+<p class="rvps6"><span class="rvts15"><br/></span></p>
+<p class="rvps6"><span class="rvts17">Многомерный массив</span></p>
+<p class="rvps6"><span class="rvts13">public static function </span><span class="rvts14">CreateCellArrayMatrix2D(columns:</span><span class="rvts13">int</span><span class="rvts14">, rows:</span><span class="rvts13">int</span><span class="rvts14">):Array </span><span class="rvts24">/*</span><span class="rvts19">Cell</span><span class="rvts24">*/</span></p>
+<p class="rvps6"><span class="rvts14">{</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts24">/* i - столбец; j - строка */</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts14">newArray:</span><span class="rvts19">/*Cell*/</span><span class="rvts13">Array </span><span class="rvts14">= [];</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts14">unitAdd:Cell = </span><span class="rvts13">new </span><span class="rvts14">Cell();</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">for </span><span class="rvts14">(</span><span class="rvts13">var </span><span class="rvts14">i:</span><span class="rvts13">int</span><span class="rvts14"> = 0; i &lt; columns; i++) </span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">var </span><span class="rvts14">newRow:</span><span class="rvts13">Array </span><span class="rvts14">= [];</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">for </span><span class="rvts14">(</span><span class="rvts13">var </span><span class="rvts14">j:</span><span class="rvts13">int </span><span class="rvts14">= 0; j &lt; rows; j++)</span></p>
+<p class="rvps6"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">{</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">newRow.push(unitAdd);</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">newArray.push(newRow);</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts13">return </span><span class="rvts14">newArray;</span></p>
+<p class="rvps6"><span class="rvts14">}</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts16">private var </span><span class="rvts15">matrix2D:</span><span class="rvts19">/*Cell*/</span><span class="rvts16">Array </span><span class="rvts15">= </span><span class="rvts14">CreateCellArrayMatrix2D</span><span class="rvts15">(10, 10);</span></p>
+<p class="rvps6"><span class="rvts16">trace</span><span class="rvts15">((matrix2D[0][0] </span><span class="rvts16">as </span><span class="rvts15">Cell).x);</span></p>
+<p class="rvps6"><span class="rvts15"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com">Easy CHM and documentation editor</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

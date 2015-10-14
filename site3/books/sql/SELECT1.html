@@ -1,0 +1,154 @@
+﻿<html>
+	
+<head>
+	<title>SELECT</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "CSG Develop.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("SELECT1");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">SELECT</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="SQL.html">Язык закросов SQL</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="SQL.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="SQL.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="INSERT.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts13">Выбрать информацию всех полей из таблицы</span></p>
+<p class="rvps2"><span class="rvts6">SELECT * FROM ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Выбрать информацию указанных полей из таблицы</span></p>
+<p class="rvps2"><span class="rvts14">SELECT Поле1, Поле2, ПолеN FROM ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">DISTINCT - устраняет повторяющиеся значения.</span></p>
+<p class="rvps2"><span class="rvts14">SELECT DISTINCT Поле1, Поле2 FORM ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">ALL - покажет все записи даже те которые повторяются</span></p>
+<p class="rvps2"><span class="rvts14">SELECT ALL Поле1, Поле2 FORM ИмяТаблицы</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Отбор строк по условию</span></p>
+<p class="rvps2"><span class="rvts14">SELECT Поле1, Поле2 FROM ИмяТаблицы WHERE (Поле1 = Значение)</span></p>
+<p class="rvps2"><span class="rvts6">Реляционные операторы</span></p>
+<p class="rvps2"><span class="rvts6">= &nbsp; &nbsp;равный чему-либо;</span></p>
+<p class="rvps2"><span class="rvts6">&gt; &nbsp; &nbsp;больше чем;</span></p>
+<p class="rvps2"><span class="rvts6">&lt; &nbsp; &nbsp;меньше чем;</span></p>
+<p class="rvps2"><span class="rvts6">&gt;= &nbsp; &nbsp;больше чем или равно;</span></p>
+<p class="rvps2"><span class="rvts6">&lt;= &nbsp; &nbsp;меньше чем или равно;</span></p>
+<p class="rvps2"><span class="rvts6">&lt;&gt; &nbsp; &nbsp;не равно;</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (text = 'Значение')</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (num = 100)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (num &gt; 100)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (num &lt; 100)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (num &gt;= 100)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (num &lt;= 100)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (myDate = 05/12/2012)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Стандартный булевый оператор &nbsp;AND(И).</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE ( Поле1 = 100 AND Поле2 = 'Значение' )</span></p>
+<p class="rvps2"><span class="rvts13">Стандартный булевый оператор OR (ИЛИ)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE( Поле1 = 100 OR Поле2 = 'Значение' )</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Стандартный булевый оператор NOT (НЕ) отрецание.</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT( Поле1 = 100 AND Поле2 = 'Значение' )</span></p>
+<p class="rvps2"><span class="rvts13">Отбор значений в которые не входят указанные значения</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле NOT IN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT Поле IN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле NOT BETWEEN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT Поле BETWEEN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле NOT LIKE ('Знач%')</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT Поле LIKE ('%нач%')</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT ИмяПоле IS NULL</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (ИмяПоле NOT NULL)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE ИмяПоле NOT IN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Оператор IN определяет набор значений с помощью списка.</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле IN ('Значение1', 'Значение2')</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле IN (100, 200)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле IN (17.00, 25.50)</span></p>
+<p class="rvps2"><span class="rvts13">Отбор значений в которые не входят указанные значения</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле NOT IN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT Поле IN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Оператор BETWEEN определяет диапазон значений</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (ИмяПоле BETWEEN 3000 AND 5000)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (ИмяПоле BETWEEN 'к' AND 'с')</span></p>
+<p class="rvps2"><span class="rvts13">Отбор значений которые на входят в диапазон</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле NOT BETWEEN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT Поле BETWEEN (2000, 2001)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Оператор LIKE ищед подстроки (применяется только к полям типа CHAR)</span></p>
+<p class="rvps2"><span class="rvts13">_ &nbsp; &nbsp;Символ подчёркивания заменяет любой одиночный символ</span></p>
+<p class="rvps2"><span class="rvts13">% &nbsp; &nbsp;Знак процента заменяет последовательность любого числа символом.</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (ИмяПоле LIKE 'Знач%')</span></p>
+<p class="rvps2"><span class="rvts13">Отбор значений которые не соответствуют значению условия</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE Поле NOT LIKE ('Знач%')</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT Поле LIKE ('%нач%')</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts13">Оператор IS различает неверное и неизвестное значение. (ключевое слово NULL)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (ИмяПоле IS NULL)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE NOT ИмяПоле IS NULL</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE (ИмяПоле NOT NULL)</span></p>
+<p class="rvps2"><span class="rvts14">SELECT * FROM ИмяТаблицы WHERE ИмяПоле NOT IN (2000, 2001)</span></p>
+<p></p>
+<p class="rvps4"><span class="rvts11">Created with the Personal Edition of HelpNDoc: </span><a class="rvts12" href="http://www.helpndoc.com/create-epub-ebooks">Write EPub books for the iPad</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Catfish Studio Games. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+
