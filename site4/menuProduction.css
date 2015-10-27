@@ -1,0 +1,165 @@
+#menuLine1{
+	width:200px;
+	height:35px;
+	cursor:pointer;
+	overflow:  hidden;
+}
+
+#menuLine1 p{
+	width:200px;
+	height:30px;
+	padding-top:5px;
+	background-color:#A4C0FB;
+	border:0px solid #A4C0FB;
+	border-top-left-radius:25px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:25px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	color:#FFFFFF;
+}
+#menuLine1 p:hover{
+	color:#0A50D1;
+}
+#menuLine1:hover{
+	overflow:  visible;
+}
+
+#product1{
+	background-image:url(images/001.gif);
+	width:444px;
+	height:141px;
+	text-align:right;
+	position:relative;
+	left:210px;
+	top:-35px;
+	box-shadow: 0 0 10px rgb(0, 0, 0);	/* тень для Internet Explorer */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);	/* тень полупрозрачная */
+	padding:5px;
+}
+
+/*=================================================*/
+#menuLine2{
+	width:200px;
+	height:35px;
+	cursor:pointer;
+	overflow:  hidden;
+}
+
+#menuLine2 p{
+	width:200px;
+	height:30px;
+	padding-top:5px;
+	background-color:#A4C0FB;
+	border:0px solid #A4C0FB;
+	border-top-left-radius:25px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:25px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+#menuLine2 p:hover{
+	color:#0A50D1;
+}
+#menuLine2:hover{
+	overflow:  visible;
+}
+
+#product2{
+	background-image:url(images/002.gif);
+	width:444px;
+	height:141px;
+	text-align:left;
+	position:relative;
+	left:210px;
+	top:-35px;
+	box-shadow: 0 0 10px rgb(0, 0, 0);	/* тень для Internet Explorer */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);	/* тень полупрозрачная */
+	padding:5px;
+}
+
+/*=================================================*/
+#menuLine3{
+	width:200px;
+	height:35px;
+	cursor:pointer;
+	overflow:  hidden;
+}
+
+#menuLine3 p{
+	width:200px;
+	height:30px;
+	padding-top:5px;
+	background-color:#A4C0FB;
+	border:0px solid #A4C0FB;
+	border-top-left-radius:25px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:25px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+#menuLine3 p:hover{
+	color:#0A50D1;
+}
+#menuLine3:hover{
+	overflow:  visible;
+}
+
+#product3{
+	background-image:url(images/003.gif);
+	width:444px;
+	height:141px;
+	text-align:right;
+	position:relative;
+	left:210px;
+	top:-35px;
+	box-shadow: 0 0 10px rgb(0, 0, 0);	/* тень для Internet Explorer */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);	/* тень полупрозрачная */
+	padding:5px;
+}
+
+/*=================================================*/
+#menuLine4{
+	width:200px;
+	height:35px;
+	cursor:pointer;
+	overflow:  hidden;
+}
+
+#menuLine4 p{
+	width:200px;
+	height:30px;
+	padding-top:5px;
+	background-color:#A4C0FB;
+	border:0px solid #A4C0FB;
+	border-top-left-radius:25px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:25px;
+	border-bottom-left-radius:5px;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+#menuLine4 p:hover{
+	color:#0A50D1;
+}
+#menuLine4:hover{
+	overflow:  visible;
+}
+
+#product4{
+	background-image:url(images/004.gif);
+	width:444px;
+	height:141px;
+	text-align:left;
+	position:relative;
+	left:210px;
+	top:-35px;
+	box-shadow: 0 0 10px rgb(0, 0, 0);	/* тень для Internet Explorer */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);	/* тень полупрозрачная */
+	padding:5px;
+}
