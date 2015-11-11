@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-image: url("../img/bgimage.png");
+	font: 12pt Arial;
+}
+
+.textbox{
+	border: 1px solid #C0C0C0;
+	border-radius: 5px 5px 5px 5px;
+	width: 100%;
+	height:25px;
+	margin-top: 10px;
+}
+
+.button{
+	cursor: pointer;
+	border: 1px solid #C0C0C0;
+	border-radius: 5px 5px 5px 5px;
+	margin-top:20px;
+	margin-left:40%;
+	width: 25%;
+	height:25px;
+}
+
+.menu{
+	position:fixed;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 25px rgba(0,0,0,0.8);
+	border: 1px solid white;
+	padding: 5px 5px 5px 5px;
+	width: 100%;
+	height: 65px;
+	top: -1%;
+}
+
+.bigwindow{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 25px rgba(0,0,0,0.8);
+	border: 1px solid white;
+	border-radius: 5px 5px 5px 5px;
+	width: 95%;
+	height: 90%;
+	margin: 100px auto;
+	padding: 20px 20px 20px 20px;
+}
+
+.footer{
+	position:relative;
+	width: 50%;
+	height: 10%;
+	top: -50px;
+	left: 25px;
+}
