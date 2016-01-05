@@ -1,0 +1,31 @@
+/* default */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+    margin: 0;
+	background-image: url("../img/background.jpg");
+    background-size: cover;
+	height:100%;
+}
+
+#logo{
+	margin-left: 350%;
+}
+
+#menu{
+	box-shadow: 5px 0 10px rgba(0,0,0,0.5);
+	border: 0px solid white;
+	background-color: #FD0100;
+	margin-left: 2%;
+	height: 100%;
+	width: 20%;
+}
