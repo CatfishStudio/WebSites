@@ -1,0 +1,270 @@
+/* default */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+    margin: 0;
+	background-image: url("../img/background.jpg");
+    background-size: cover;
+	height:100%;
+}
+
+#menu{
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	border: 0px solid white;
+	background-color: rgba(0, 0, 0, 0);
+	margin-left: 2%;
+	height: 100%;
+	width: 20%;
+}
+
+ul{
+	padding-top: 1%;
+	padding-left: 15%;
+}
+
+ul li { 
+	display: block;
+	color: #000000;
+	cursor: pointer;
+	height: 100px;
+	overflow: hidden;
+    width: 90%;
+	font: 13pt sans-serif;
+	text-decoration: none;
+}
+
+ul li a{
+	color: #0A50D1;
+	text-decoration: none;
+}	
+
+ul li p:hover{
+	color:#FF0000;
+	/*background-color: #CC0000;*/
+}
+
+ul li:hover{
+	
+}
+
+img {
+	border: 1 solid #ffffff;
+	border-radius: 25px 25px;
+}
+
+.button1{
+	position:relative;
+	background-image: url("../img/bubble1.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 45%;
+	left: 45%;
+	text-decoration: none;
+}
+
+.button1 p{
+	position:relative;
+	top: 38%;
+	left:25%;
+}
+
+.button2{
+	position:relative;
+	background-image: url("../img/bubble2.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 45%;
+	left: 0%;
+	text-decoration: none;
+}
+
+.button2 p{
+	position:relative;
+	top: 38%;
+	left:15%;
+}
+
+.button3{
+	position:relative;
+	background-image: url("../img/bubble3.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 45%;
+	left: 30%;
+	text-decoration: none;
+}
+
+.button3 p{
+	position:relative;
+	top: 38%;
+	left:15%;
+}
+
+.button4{
+	position:relative;
+	background-image: url("../img/bubble4.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 45%;
+	left: 5%;
+	text-decoration: none;
+}
+
+.button4 p{
+	position:relative;
+	top: 38%;
+	left:3%;
+}
+
+.button5{
+	position:relative;
+	background-image: url("../img/bubble5.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 45%;
+	left: 45%;
+	text-decoration: none;
+}
+
+.button5 p{
+	position:relative;
+	top: 38%;
+	left:10%;
+}
+
+
+#about{
+	position: absolute;
+	top: 10%;
+	left: 45%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 100px;
+	padding: 25px;
+	overflow: hidden;
+}
+
+#news{
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 32%;
+	width: 35%;
+	padding: 25px;
+	overflow: hidden;
+}
+
+#news_big{
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 45%;
+	width: 65%;
+	padding: 25px;
+	overflow: hidden;
+}
+
+.game_image {
+	height: 60%;
+	width: 90%;
+}
+
+.technologies_image_1 {
+	height: 40%;
+	width: 60%;
+}
+
+.technologies_image_2 {
+	height: 20%;
+	width: 50%;
+}
+
+#swheroes{
+	position: absolute;
+	top: 1%;
+	left: 25%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 75%;
+	width: 30%;
+	padding: 25px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#mkquest{
+	position: absolute;
+	top: 1%;
+	left: 60%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 75%;
+	width: 30%;
+	padding: 25px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#contacts{
+	position: absolute;
+	top: 45%;
+	left: 72%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 27%;
+	padding: 25px;
+	overflow: hidden;
+}
+
+#technologies{
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 65%;
+	width: 45%;
+	padding: 25px;
+	overflow: hidden;
+}
+
+#autor p{
+	position: absolute;
+	top: 95%;
+	left: 3%;
+	font: 8pt sans-serif;
+}
