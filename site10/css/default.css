@@ -307,3 +307,96 @@ ul li:hover{
 	padding: 25px;
 	overflow: hidden;
 }
+
+#game1{
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 250px;
+	width: 480px;
+	padding: 10px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#game1 img {
+	border: 1 solid #ffffff;
+	border-radius: 25px 25px;
+	margin-right: 5px;
+	height: 200px;
+	width: 250px;
+	float:left;
+}
+
+#game1 h3 {
+	text-align: right;
+	margin-bottom: 5px;
+	margin-right: 25px;
+}
+
+#game2{
+	position: absolute;
+	top: 125px;
+	left: 550px;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 250px;
+	width: 450px;
+	padding: 10px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#game2 img {
+	border: 1 solid #ffffff;
+	border-radius: 25px 25px;
+	margin-right: 5px;
+	height: 200px;
+	width: 250px;
+	float:left;
+}
+
+#game2 h3 {
+	text-align: right;
+	margin-bottom: 5px;
+	margin-right: 25px;
+}
+
+#game3{
+	position: absolute;
+	top: 315px;
+	left: 50px;
+	background-color: #ffffff;
+	border: 1 solid #ffffff;
+	border-radius: 50px 50px;
+    color: #0A50D1;
+	box-shadow: 5px 0 10px rgba(0,0,150,0.5);
+	height: 250px;
+	width: 450px;
+	padding: 10px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#game3 img {
+	border: 1 solid #ffffff;
+	border-radius: 25px 25px;
+	margin-right: 5px;
+	height: 200px;
+	width: 250px;
+	float:left;
+}
+
+#game3 h3 {
+	text-align: right;
+	margin-bottom: 5px;
+	margin-right: 25px;
+}
